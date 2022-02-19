@@ -15,7 +15,7 @@ dotenv.config();
 app.use(cors())
 
 app.use(express.json());
-const URL = "mongodb+srv://jainakshat:taradevi123@cluster0.clemf.mongodb.net/blog?retryWrites=true&w=majority"
+const URL = "#MONGO_URI#"
 
 mongoose.connect(process.env.MONGODB_URI || URL,{
     useNewUrlParser: true,
